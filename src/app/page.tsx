@@ -3,11 +3,6 @@ import { SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
-import setupLocatorUI from "@locator/runtime";
-
-if (process.env.NODE_ENV === "development") {
-  setupLocatorUI();
-}
 
 export default async function Page() {
   const client = createClient();
