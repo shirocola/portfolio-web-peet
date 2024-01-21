@@ -18,7 +18,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className="mx-auto overflow-hidden relative"
-      style={{ maxWidth: '50vw' }}
+      style={{ maxWidth: '100vw' }}
     >
       {slice.primary.heading && (
         <h2 className="text-3xl font-bold text-center mb-6">{slice.primary.heading}</h2>
