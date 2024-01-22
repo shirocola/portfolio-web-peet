@@ -26,7 +26,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
 
       <div className="flex whitespace-nowrap slider">
         {slice.items.map((item, index) => (
-          <div key={index} className="inline-flex items-center justify-center p-2" style={{ minWidth: '80px' }}>
+          <div key={index} className="inline-flex items-center justify-center p-4" style={{ minWidth: '80px' }}>
             {item.tech_image && (
               <Image
                 src={item.tech_image.url ?? ''}
@@ -34,6 +34,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
                 width={80}
                 height={80}
                 className="object-contain"
+                loading="eager"
               />
             )}
           </div>
@@ -46,7 +47,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
           to { transform: translateX(-100%); }
         }
         .slider {
-          animation: slide 30s linear infinite;
+          animation: slide 20s linear infinite;
         }
       `}</style>
     </section>

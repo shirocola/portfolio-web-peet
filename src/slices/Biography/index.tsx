@@ -22,11 +22,11 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <div className="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-x-8 gap-y-6">
-        <Heading size="xl" className="col-start-1">
+        <Heading size="xl" className="col-start-1 text-black">
           {slice.primary.heading}
         </Heading>
 
-        <div className="prose prose-xl prose-slate prose-invert col-start-1">
+        <div className="prose prose-xl prose-slate prose-invert col-start-1 text-black">
           <PrismicRichText field={slice.primary.description} />
         </div>
         <Button

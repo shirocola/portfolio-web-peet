@@ -82,14 +82,14 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             }
           >
             <div className="whitespace-nowrap mb-8">
-              <span className="block text-slate-300">
+              <span className="block text-slate-400">
                 {renderLetters(slice.primary.first_name, 'first')}
               </span>
               <span className="-mt-[.2em] block text-slate-500">
                 {renderLetters(slice.primary.last_name, 'last')}
               </span>
             </div>
-            <span className="job-title block bg-gradient-to-tr from-red-500 via-orange-200 to-yellow-500
+            <span className="job-title block bg-gradient-to-tr from-red-500 via-orange-500 to-yellow-500
             bg-clip-text text-2xl font-bold uppercase tracking-[.2em] text-transparent 
             opacity-0 md:text-4xl" >
               {slice.primary.tag_line}
