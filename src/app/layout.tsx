@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-slate-100 text-slate-900">
+      <GoogleAnalytics gaId="G-STJWHCEVQL" />
       <body className={urbanist.className}>
         <Header />
         {children}</body>
